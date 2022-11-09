@@ -34,7 +34,8 @@
           </li>
           <li class="nav__link">
             <a
-              href="./subscribe.html"
+              onclick="toggleEmailModal()"
+              href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
             >
               Subscribe</a
@@ -58,7 +59,8 @@
           </li>
           <li class="nav__link">
             <a
-              href=""
+              onclick="toggleSubModal()"
+              href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
             >
               Contact</a
@@ -78,47 +80,150 @@
         <div class="container">
           <div class="row">
             <div class="landing__description">
-              <h1 class="landing__title">Gainesville <span class="gradient">Dream Cars</span></h1>
-              <h3 class="landing__sub-title">Gainesville's <span class="blue"> highest rated</span> and  <span class="blue">most awarded</span> car-search service</h3>
-              <a href="" class="landing__description--button click hover__up">Start your search!</a>
+              <h1 class="landing__title">
+                Gainesville <span class="gradient">Dream Cars</span>
+              </h1>
+              <h3 class="landing__sub-title">
+                Gainesville's <span class="blue"> highest rated</span> and
+                <span class="blue">most awarded</span> car-search service
+              </h3>
+              <a href="" class="landing__description--button click hover__up"
+                >Start your search!</a
+              >
             </div>
             <figure class="landing__img--wrapper">
-            <img src="./undrawImgs/undraw_vehicle_sale_a645.svg" class="landing__img" />
-          </figure>
+              <img
+                src="./undrawImgs/undraw_vehicle_sale_a645.svg"
+                class="landing__img"
+              />
+            </figure>
+            <div class="badge-ribbon__wrapper">
+              <div class="badge-ribbon">
+                <img src="./undrawImgs/award.png" class="badge-ribbon__img" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </header>
-      <img src="./blob.svg" alt="" class="shape back--1">
-      <img src="./blob.svg" alt="" class="shape back--2">
-      <img src="./blob.svg" alt="" class="shape back--3">
-      <img src="./blob.svg" alt="" class="shape back--4">
-      <img src="./undrawImgs/SVG Shapes/semi circle.svg" alt="" class="shape__animate shape--1">
-      <img src="./undrawImgs/SVG Shapes/squiggly.svg" alt="" class="shape__animate shape--2">
-      <img src="./undrawImgs/SVG Shapes/semi circle.svg" alt="" class="shape__animate shape--3">
-      <img src="./undrawImgs/SVG Shapes/squiggly.svg" alt="" class="shape__animate shape--4">
-      <img src="./undrawImgs/SVG Shapes/semi circle.svg" alt="" class="shape__animate shape--5">
-      <img src="./undrawImgs/SVG Shapes/squiggly.svg" alt="" class="shape__animate shape--6">
-      <img src="./undrawImgs/SVG Shapes/semi circle.svg" alt="" class="shape__animate shape--7">
-      <img src="./undrawImgs/SVG Shapes/squiggly.svg" alt="" class="shape__animate shape--8">
-      <img src="./undrawImgs/SVG Shapes/semi circle.svg" alt="" class="shape__animate shape--9">
-      
-      
-      <a href="" class="btn__wrapper">
+      <img src="./blob.svg" alt="" class="shape back--1" />
+      <img src="./blob.svg" alt="" class="shape back--2" />
+      <img src="./blob.svg" alt="" class="shape back--3" />
+      <img src="./blob.svg" alt="" class="shape back--4" />
+      <img
+        src="./undrawImgs/SVG Shapes/semi circle.svg"
+        alt=""
+        class="shape__animate shape--1"
+      />
+      <img
+        src="./undrawImgs/SVG Shapes/squiggly.svg"
+        alt=""
+        class="shape__animate shape--2"
+      />
+      <img
+        src="./undrawImgs/SVG Shapes/semi circle.svg"
+        alt=""
+        class="shape__animate shape--3"
+      />
+      <img
+        src="./undrawImgs/SVG Shapes/squiggly.svg"
+        alt=""
+        class="shape__animate shape--4"
+      />
+      <img
+        src="./undrawImgs/SVG Shapes/semi circle.svg"
+        alt=""
+        class="shape__animate shape--5"
+      />
+      <img
+        src="./undrawImgs/SVG Shapes/squiggly.svg"
+        alt=""
+        class="shape__animate shape--6"
+      />
+      <img
+        src="./undrawImgs/SVG Shapes/semi circle.svg"
+        alt=""
+        class="shape__animate shape--7"
+      />
+      <img
+        src="./undrawImgs/SVG Shapes/squiggly.svg"
+        alt=""
+        class="shape__animate shape--8"
+      />
+      <img
+        src="./undrawImgs/SVG Shapes/semi circle.svg"
+        alt=""
+        class="shape__animate shape--9"
+      />
+
+      <a href="#" class="btn__wrapper" onclick="toggleEmailModal()">
         <button class="mail__btn click">
           <i class="fas fa-envelope btn__img"></i>
         </button>
       </a>
-     
-      <a href="">
+
+      <a href="#" onclick="toggleSubModal()">
         <button class="sub__btn click">
           <i class="fa-solid fa-newspaper btn__img"></i>
         </button>
       </a>
-      <div class="badge-ribbon__wrapper">
-      <div class="badge-ribbon">
-        <img src="./undrawImgs/award.png" class="badge-ribbon__img" alt="">
+      
+
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about"></h3>
+          <h4 class="modal__sub-title modal__sub-title--white"></h4>
+          <p class="modal__para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex
+            molestias ad alias voluptate repellat cupiditate sed nisi non aut.
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aut
+            facilis ab deleniti minus officiis est possimus perspiciatis quaerat
+            a?
+          </p>
+        </div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">Let's have a Chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="text" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text"></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+          <i
+            class="fas fa-times modal__exit click"
+            onclick="toggleEmailModal()"
+          ></i>
+        </div>
       </div>
-    </div>
+
+      <div class="modal__sub">
+        <div class="modal__top">
+          
+        </div>
+        <div class="modal__bottom">
+          
+        </div>
+      </div>
     </section>
   </body>
 </html>
