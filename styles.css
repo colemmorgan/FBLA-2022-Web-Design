@@ -201,6 +201,21 @@ nav {
 }
 
 
+.sub__btn{
+  width: 50px;
+  background-color: black;
+  filter: invert(1);
+  position: fixed;
+  bottom: 32px;
+  left: 40px;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  font-size: 32px;
+  z-index: 3;
+}
+
+
 
 
 
