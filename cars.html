@@ -1,82 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gainesville Dream Cars</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="./favicon.png" />
     <script
-      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      src="https://kit.fontawesome.com/630622aa33.js"
       crossorigin="anonymous"
     ></script>
     <script src="index.js" defer></script>
-</head>
-<body>
-    <section id="landing-page">
-        <nav>
-          <figure>
-            <img
-              class="company__logo"
-              src="./gdc-low-resolution-logo-black-on-transparent-background (1).png"
-              alt=""
-            />
-          </figure>
-          <ul class="nav__link--list">
-            <li class="nav__link">
-                <a
-                  href="./index.html"
-                  class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                >
-                  Landing</a
-                >
+  </head>
+
+  <body>
+    <section id="cars">
+      <nav>
+        <figure>
+          <img
+            class="company__logo"
+            src="./gdc-low-resolution-logo-white-on-transparent-background.png"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="./index.html"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            >
+              Home</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="./subscribe.html"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            >
+              Subscribe</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="./cars.html"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            >
+              Cars</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="./wishlist.html"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            >
+              Wishlist</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href=""
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            >
+              Contact</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href=""
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            >
+              <i class="fas fa-adjust" onclick="toggleContrast()"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="contianer">
+          <div class="row">
+            <h1>Cars</h1>
+            <ul class="car__list">
+              <li class="car">
+                <div class="car__wrapper"></div>
               </li>
-            <li class="nav__link">
-              <a
-                href="./subscribe.html"
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >
-                Subscribe</a
-              >
-            </li>
-            <li class="nav__link">
-              <a
-                href="./cars.html"
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >
-                Cars</a
-              >
-            </li>
-            <li class="nav__link">
-              <a
-                href="./wishlist.html"
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >
-                Wishlist</a
-              >
-            </li>
-            <li class="nav__link">
-              <a
-                href=""
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >
-                Contact</a
-              >
-            </li>
-            <li class="nav__link">
-              <a
-                href=""
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >
-                <i class="fas fa-adjust" onclick="toggleContrast()"></i
-              ></a>
-            </li>
-          </ul>
-        </nav>
-        <header class="header">
-            <h1>Cars Page</h1>
-        </header>
-      </section>
-</body>
+              <li class="car">
+                <div class="car__wrapper"></div>
+              </li>
+              <li class="car">
+                <div class="car__wrapper"></div>
+              </li>
+              <li class="car">
+                <div class="car__wrapper"></div>
+              </li>
+              <li class="car">
+                <div class="car__wrapper"></div>
+              </li>
+              <li class="car">
+                <div class="car__wrapper"></div>
+              </li>
+              <li class="car">
+                <div class="car__wrapper"></div>
+              </li>
+
+              <li class="car">
+                <div class="car__wrapper"></div>
+              </li>
+
+              <li class="car">
+                <div class="car__wrapper"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="" class="btn__wrapper">
+          <button class="mail__btn click">
+            <i class="fas fa-envelope btn__img"></i>
+          </button>
+        </a>
+       
+        <a href="">
+          <button class="sub__btn click">
+            <i class="fa-solid fa-newspaper btn__img"></i>
+          </button>
+        </a>
+        </a>
+      </header>
+    </section>
+  </body>
 </html>

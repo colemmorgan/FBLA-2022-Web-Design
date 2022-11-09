@@ -44,6 +44,7 @@ a {
   padding: 0 12px;
   height: 100%;
   min-height: 100vh;
+  
 }
 
 .gradient {
@@ -186,10 +187,22 @@ nav {
   justify-content: center;
 }
 
+
+
+/* 
+
+Buttons
+
+*/
+
+.btn__img{
+  color: black;
+}
+
 .mail__btn{
     width: 50px;
-    background-color: black;
-    filter: invert(1);
+    background-color: white;
+    border: none;
     position: fixed;
     bottom: 32px;
     right: 40px;
@@ -198,13 +211,30 @@ nav {
     width: 70px;
     font-size: 32px;
     z-index: 3;
+    text-align: center;
+}
+
+.mail__btn::after{
+  content: "Contact";
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+
+.mail__btn:hover:after{
+  transform: translateX(-125%);
+  opacity: 1;
 }
 
 
 .sub__btn{
   width: 50px;
-  background-color: black;
-  filter: invert(1);
+  background-color: white;
   position: fixed;
   bottom: 32px;
   left: 40px;
@@ -213,6 +243,23 @@ nav {
   width: 70px;
   font-size: 32px;
   z-index: 3;
+  border: none;
+}
+
+.sub__btn::after{
+  content: "Subscribe";
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  opacity: 0;
+  transition: all 400ms ease;
+}
+
+.sub__btn:hover:after{
+  transform: translateX(90%);
+  opacity: 1;
 }
 
 
@@ -373,3 +420,40 @@ footer{
 .footer__copyright {
   color: white;
 }
+
+
+
+/* 
+
+Cars Page
+
+*/
+
+
+.car__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ .car__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.car{
+  
+  margin: 40px 20px 24px 24px ;
+  height: 160px;
+  border: 4pt #00b0ff solid;
+  box-shadow: 0 20px 80px rgb(0,0,0,0.9);
+  width: 28%;
+
+}
+
+
+
+/* modal */
