@@ -543,6 +543,7 @@ Cars Page
 .modal__about{
   background-color: #00b0ff;
   transform: translateX(-110%);  
+  color: white;
  
 }
 
@@ -572,7 +573,8 @@ Cars Page
   margin-bottom: 20px;
 }
 
-.form__submit{
+.form__submit,
+.sub-form__submit{
   background-color: white;
   border: 2px solid white;
   color: #242424;
@@ -584,7 +586,8 @@ Cars Page
   transition: all 300ms ease;
 }
 
-.form__submit:hover{
+.form__submit:hover,
+.sub-form__submit:hover{
   border-color: white;
   background-color: transparent;
   color: #00b0ff;
@@ -621,6 +624,10 @@ Cars Page
   padding: 28px;
   
   
+}
+
+.fa-star{
+  color: gold;
 }
 
 .modal__overlay--visible{ 
@@ -664,7 +671,7 @@ SUBMODAL
 
 
 
-.modal__sub{
+.modal__subscribe{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -675,49 +682,135 @@ SUBMODAL
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
   z-index: -1;
   visibility: hidden;
   transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
 
-.modal__top,
-.modal__bottom {
-  width: 100%;
-  height: 50%;
-  transition: all 450ms ease;
-}
 
-.modal__top{
+
+
+.modal__form{
   background-color: #242424;
-  transform: translateY(-110%);
-}
-
-
-.modal__bottom{
-  background-color: #00b0ff;
-  transform: translateY(110%);
+  transform: translateX(-110%);
+  color: white;
 }
 
 
 
-.sub-modal--open .modal__sub{
+
+.sub-modal--open .modal__subscribe{
   z-index: 60;
   box-shadow: 0 20px 80px 0 rgb(0,0,0,0.55);
   visibility: visible;
 }
 
-.sub-modal--open .modal__top,
-.sub-modal--open .modal__bottom{
-  transform: translateY(0%);
+.modal__form-info {
+  background-color: #00b0ff;
+  transform: translateX(110%);
+  color: white;
 }
 
+
+.sub-modal--open .modal__form-info,
+.sub-modal--open .modal__form {
+  transform: translateX(0%);
+}
 
 .sub-modal--open .row,
 .email-modal--open .row{
   visibility: hidden;
 }
 
+.checkbox{
+  display: flex;
+}
+
+.checkbox__btn{
+  max-width: 40px;
+  margin-right: 24px;
+}
+
+.checkbox__btn:checked{
+  background-color: #242424;
+  color: #242424;
+}
+
+#subscription__form{
+  margin-top: 40px;
+}
+
+
+.form__agreement{
+  font-size: 13px;
+}
+
+
+
+
+/* 
+
+Menu
+
+*/
+.btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  border: none;
+  color: white;
+  display: none;
+}
+.menu__backdrop {
+  position: absolute;
+  background-color: #242424;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 180;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transition: all 300ms ease;
+  opacity: 0;
+  transform: translate(100%);
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.menu__link {
+  color: white;
+  font-size: 40px;
+}
+
+.btn__menu--close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 8px;
+  color: white;
+}
 
 
 /* 
@@ -725,11 +818,9 @@ SUBMODAL
 Light mode
 
 */
-
-
-
 .light__mode .nav__link--anchor,
-.light__mode .landing__description{
+.light__mode .landing__description,
+.light__mode .btn__menu{
   color: #242424;
 }
 
@@ -783,6 +874,13 @@ Light mode
   }
   .shape__animate{
     visibility: hidden;
+  }
+  .btn__menu {
+    display: block;
+  }
+
+  .nav__link--list {
+    display: none;
   }
 }
 @media (max-width: 468px){

@@ -1,25 +1,41 @@
 const scaleFactor = 1 / 20;
 let isEmailModalOpen = false;
 let isSubModalOpen = false;
-let lightMode= false;
+let lightMode = false;
+let isMenuOpen = false;
+let wishlistLength= 0;
+
+function toggleMenu() {
+  if (isMenuOpen) {
+    isMenuOpen = false;
+    return document.body.classList.remove("menu--open");
+  }
+
+  isMenuOpen = true;
+  document.body.classList += " menu--open";
+}
 
 function toggleLightMode() {
   if (lightMode) {
-    lightMode=false
-    return document.body.classList.remove('light__mode')
+    lightMode = false;
+    return document.body.classList.remove("light__mode");
   }
-  console.log('working')
-  lightMode=true
-  document.body.classList += " light__mode"
+  console.log("working");
+  lightMode = true;
+  document.body.classList += " light__mode";
 }
 
 function toggleSubModal() {
-  if (isSubModalOpen){
+  if (isSubModalOpen) {
     isSubModalOpen = false;
     return document.body.classList.remove("sub-modal--open");
   }
+  if (isEmailModalOpen) {
+    document.body.classList.remove("email-modal--open");
+    isEmailModalOpen = false;
+  }
   isSubModalOpen = true;
-  document.body.classList += " sub-modal--open"
+  document.body.classList += " sub-modal--open";
 }
 
 function toggleEmailModal() {
@@ -27,9 +43,12 @@ function toggleEmailModal() {
     isEmailModalOpen = false;
     return document.body.classList.remove("email-modal--open");
   }
+  if (isSubModalOpen) {
+    document.body.classList.remove("sub-modal--open");
+    isSubModalOpen = false;
+  }
   isEmailModalOpen = true;
   document.body.classList += " email-modal--open";
-  console.log("working")
 }
 
 function moveBackground(event) {
@@ -43,7 +62,6 @@ function moveBackground(event) {
     shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`;
   }
 }
-
 
 function contact(event) {
   event.preventDefault();

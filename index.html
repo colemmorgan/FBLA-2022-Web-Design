@@ -68,14 +68,33 @@
           </li>
           <li class="nav__link">
             <a
-            onclick="toggleLightMode()"
+              onclick="toggleLightMode()"
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
             >
-              <i class="fas fa-adjust" ></i
+              <i class="fas fa-adjust"></i
             ></a>
           </li>
         </ul>
+        <button class="btn__menu click" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+       <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="toggleMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link link__hover-effect" onclick="toggleMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link link__hover-effect" onclick="toggleMenu()">Cars</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="toggleMenu();toggleLightMode()">Switch Light/Dark Mode</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <header class="header">
         <div class="container">
@@ -100,7 +119,11 @@
             </figure>
             <div class="badge-ribbon__wrapper">
               <div class="badge-ribbon">
-                <img src="./undrawImgs/award.png" class="badge-ribbon__img" alt="" />
+                <img
+                  src="./undrawImgs/award.png"
+                  class="badge-ribbon__img"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -167,25 +190,38 @@
           <i class="fa-solid fa-newspaper btn__img"></i>
         </button>
       </a>
-      
 
       <div class="modal">
         <div class="modal__half modal__about">
-          <h3 class="modal__title modal__title--about"></h3>
-          <h4 class="modal__sub-title modal__sub-title--white"></h4>
+          <h3 class="modal__title modal__title--about">
+            Gainesville Dream Cars
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--white">
+            We are here to help!
+          </h4>
           <p class="modal__para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex
-            molestias ad alias voluptate repellat cupiditate sed nisi non aut.
+            If you ever have any questions/concerns about our site feel free to
+            reach out to us. We are dedicated to giving you the best user
+            experience possible.
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aut
-            facilis ab deleniti minus officiis est possimus perspiciatis quaerat
-            a?
+            We put our users first and it shows. We have 100+ five star reviews
+            and are growing every day.
           </p>
+          <div class="rating__wrapper">
+            <p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              - The Gainesville Review
+            </p>
+          </div>
         </div>
         <div class="modal__half modal__contact">
           <h3 class="modal__title modal__title--contact">Let's have a Chat!</h3>
           <h4 class="modal__sub-title modal__sub-title--contact">
-            I'm currently open to new opportunities
+            We want to help you find your dream car.
           </h4>
           <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
@@ -217,12 +253,52 @@
         </div>
       </div>
 
-      <div class="modal__sub">
-        <div class="modal__top">
-          
+      <div class="modal__subscribe">
+        <div class="modal__half modal__form">
+          <h2>Sign up for Updates!</h2>
+          <form action="" id="subscription__form">
+            <div class="form__item">
+              <label class="form__item--label">Full Name</label>
+              <input class="input" type="text"/>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" type="text"/>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Phone Number</label>
+              <input class="input" type="text"/>
+            </div>
+            <div class="form__item checkbox">
+              <input class="input checkbox__btn" type="checkbox"/>
+              <label class="form__item--label form__agreement"
+                >In accordance with our Privacy Policy, you permit us to store
+                the data you have entered into this form for the purpose of
+                sending you the information you have requested.</label
+              >
+            </div>
+            <button class="sub-form__submit">Sign Up!</button>
+          </form>
         </div>
-        <div class="modal__bottom">
-          
+        <div class="modal__half modal__form-info">
+          <i
+            class="fas fa-times modal__exit click"
+            onclick="toggleSubModal()"
+          ></i>
+          <h3 class="modal__title modal__title--about">
+            Subscribe to Our Newsletter!
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--white">
+            100% Free and committed to helping you
+          </h4>
+          <p class="modal__para">
+            If you ever have any questions/concerns about our site feel free to
+            reach out to us. We are dedicated to giving you the best user
+            experience possible.
+            <br />
+            We put our users first and it shows. We have 100+ five star reviews
+            and are growing every day.
+          </p>
         </div>
       </div>
     </section>
