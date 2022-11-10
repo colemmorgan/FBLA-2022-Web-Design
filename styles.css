@@ -5,16 +5,11 @@
   font-family: "Open Sans", "Sans-serif";
   padding: 0;
   margin: 0;
-  color: white;
-}
-body {
-  background-color: #242424;
 }
 
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .blue {
@@ -103,6 +98,11 @@ LANDING PAGE
 
 */
 
+
+#landing-page{
+  background-color: #242424;
+}
+
 nav {
   height: 100px;
   display: flex;
@@ -135,6 +135,7 @@ nav {
   color: white;
 }
 
+
 .company__logo {
   height: 50px;
   width: 300px;
@@ -166,11 +167,13 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .landing__title {
   font-size: 56px;
   position: relative;
+  text-align: center;
 }
 
 .landing__title::after {
@@ -210,13 +213,17 @@ nav {
 }
 
 .landing__img {
-  width: 800px;
+  width: 100%;
   z-index: 2;
 }
+
+
 
 .landing__img--wrapper {
   display: flex;
   justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 
@@ -301,8 +308,9 @@ Buttons
 .shape {
   position: absolute;
   width: 300px;
-  z-index: -2;
+  z-index: 2;
   opacity: 0.9;
+
 }
 
 .back--1{
@@ -708,4 +716,78 @@ SUBMODAL
 .sub-modal--open .row,
 .email-modal--open .row{
   visibility: hidden;
+}
+
+
+
+/* 
+
+Light mode
+
+*/
+
+
+
+.light__mode .nav__link--anchor,
+.light__mode .landing__description{
+  color: #242424;
+}
+
+
+.light__mode .mail__btn,
+.light__mode .sub__btn,
+.light__mode .company__logo {
+  filter: invert(1);
+}
+
+
+.light__mode #landing-page{
+  background-color: #dcdfe6;
+}
+
+
+
+.light__mode .landing__description--button:hover{
+  background-color: #242424;
+}
+
+
+.nav__link--anchor,
+.landing__description,
+.mail__btn,
+.sub__btn,
+.company__logo,
+#landing-page{
+  transition: all 300ms ease;
+}
+
+
+@media (max-width:1280px){
+  .shape{visibility: hidden;}
+  .landing__title{ font-size: 48px;}
+  .landing__sub-title{font-size: 32px;}
+  .badge-ribbon__wrapper{visibility: hidden;}
+  .landing__img{max-width: 650px;}
+  .company__logo {
+    height: 40px;
+    width: 240px;
+  }
+}
+
+
+
+@media (max-width: 768px){
+  .company__logo {
+    height: 30px;
+    width: 180px;
+  }
+  .shape__animate{
+    visibility: hidden;
+  }
+}
+@media (max-width: 468px){
+  .company__logo {
+    height: 25px;
+    width: 150px;
+  }
 }

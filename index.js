@@ -1,6 +1,17 @@
 const scaleFactor = 1 / 20;
 let isEmailModalOpen = false;
 let isSubModalOpen = false;
+let lightMode= false;
+
+function toggleLightMode() {
+  if (lightMode) {
+    lightMode=false
+    return document.body.classList.remove('light__mode')
+  }
+  console.log('working')
+  lightMode=true
+  document.body.classList += " light__mode"
+}
 
 function toggleSubModal() {
   if (isSubModalOpen){
