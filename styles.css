@@ -10,6 +10,8 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .blue {
@@ -100,7 +102,7 @@ LANDING PAGE
 
 
 #landing-page{
-  background-color: #242424;
+  background-color: #090a0f;
   min-height: 100vh;
   min-width: 100vw;
 }
@@ -461,39 +463,6 @@ footer{
 .footer__social--link,
 .footer__copyright {
   color: white;
-}
-
-
-
-/* 
-
-Cars Page
-
-*/
-
-
-.car__list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
- .car__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-
-.car{
-  
-  margin: 40px 20px 24px 24px ;
-  height: 160px;
-  border: 4pt #00b0ff solid;
-  box-shadow: 0 20px 80px rgb(0,0,0,0.9);
-  width: 28%;
-
 }
 
 

@@ -3,7 +3,21 @@ let isEmailModalOpen = false;
 let isSubModalOpen = false;
 let lightMode = false;
 let isMenuOpen = false;
-let wishlistLength= 0;
+let wishlistLength = 0;
+let img = null;
+let isImgOpen = false;
+
+function enlargePhoto(photoID) {
+  if (isImgOpen) {
+    isImgOpen = false;
+    return document.body.classList.remove("img__enlarged");
+  }
+  img = document.getElementById(photoID).getAttribute("src");
+  image = document.getElementById("modal__img");
+  image.src = img;
+  isImgOpen = true;
+  document.body.classList += " img__enlarged"
+}
 
 function toggleMenu() {
   if (isMenuOpen) {
