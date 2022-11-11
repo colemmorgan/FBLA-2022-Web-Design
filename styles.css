@@ -101,6 +101,8 @@ LANDING PAGE
 
 #landing-page{
   background-color: #242424;
+  min-height: 100vh;
+  min-height: 100vw;
 }
 
 nav {
