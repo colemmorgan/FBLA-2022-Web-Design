@@ -10,14 +10,14 @@ let wishlistEntry=1
 let wishlistCar=null
 
 
-function addToWishlist(carNumber){
-  wishlistCar="wl_car"+wishlistEntry
+function addToWishlist(carNumber, carID){
   wishlistLength++
-  document.body.classList += " wl__occupied"
+  // if (wishlistLength===1){
+  // document.body.classList += " wl__occupied"}
   
   const newNode = document.createElement("li")
   newNode.innerHTML =document.getElementById(carNumber).innerHTML
-  newNode.setAttribute("id",wishlistCar)
+  newNode.setAttribute("id", carID)
   let list= document.getElementById("unordered__wl")
   list.appendChild(newNode)
   
@@ -25,11 +25,13 @@ function addToWishlist(carNumber){
 }
 
 
-function removeFromWishlist(carNumber){
- let object= document.getElementById('wl_car1')
+function removeFromWishlist(carID){
+ let object= document.getElementById(carID)
  object.remove()
  wishlistLength--
- document.body.classList.remove("wl__occupied")
+
+ if(wishlistLength===0){
+ document.body.classList.remove("wl__occupied")}
 
 }
 
