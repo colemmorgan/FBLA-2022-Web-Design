@@ -255,7 +255,8 @@ li{
 /*  */
 html {
   height: 100%;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background-color: #090a0f;
+  /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
   overflow-x: hidden;
   
 }
@@ -354,8 +355,7 @@ html {
 
 #wishlist{
     position: relative;
-    max-height: 1600px;
-    overflow: hidden;
+    background-color: #090a0f;
   
 }
 
