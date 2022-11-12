@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "Open Sans", "Sans-serif";
+    font-family: "Roboto", "Sans-serif";
     padding: 0;
     margin: 0;
   }
@@ -240,6 +240,9 @@ html {
   box-shadow: 1803px 737px #FFF , 411px 750px #FFF , 1741px 708px #FFF , 1696px 986px #FFF , 1198px 231px #FFF , 1233px 1214px #FFF , 1955px 355px #FFF , 320px 595px #FFF , 1471px 700px #FFF , 1183px 641px #FFF , 1899px 1306px #FFF , 1163px 47px #FFF , 1233px 1029px #FFF , 1137px 1070px #FFF , 30px 735px #FFF , 1221px 439px #FFF , 1831px 1252px #FFF , 1864px 1761px #FFF , 1527px 1200px #FFF , 1852px 67px #FFF , 870px 1075px #FFF , 1734px 197px #FFF , 1751px 1371px #FFF , 92px 591px #FFF , 2px 1697px #FFF , 1300px 4px #FFF , 456px 1967px #FFF , 953px 835px #FFF , 1737px 82px #FFF , 449px 1708px #FFF , 1237px 1136px #FFF , 735px 334px #FFF , 656px 1895px #FFF , 48px 536px #FFF , 958px 1962px #FFF , 1789px 634px #FFF , 1734px 486px #FFF , 1900px 1739px #FFF , 401px 453px #FFF , 1173px 1558px #FFF , 1775px 375px #FFF , 64px 444px #FFF , 317px 886px #FFF , 1840px 1497px #FFF , 183px 1594px #FFF , 785px 1706px #FFF , 957px 1946px #FFF , 263px 1267px #FFF , 1722px 557px #FFF , 1744px 1059px #FFF , 1614px 1351px #FFF , 1930px 1943px #FFF , 1649px 1404px #FFF , 1334px 1411px #FFF , 194px 144px #FFF , 885px 1697px #FFF , 1641px 1179px #FFF , 1260px 642px #FFF , 796px 64px #FFF , 483px 1230px #FFF , 1852px 1777px #FFF , 962px 1245px #FFF , 337px 1886px #FFF , 1874px 166px #FFF , 649px 1127px #FFF , 1292px 1572px #FFF , 1167px 1741px #FFF , 205px 1481px #FFF , 876px 1543px #FFF , 893px 337px #FFF , 805px 779px #FFF , 200px 158px #FFF , 1319px 1374px #FFF , 1078px 363px #FFF , 1322px 1116px #FFF , 318px 350px #FFF , 802px 42px #FFF , 1402px 684px #FFF , 1399px 1729px #FFF , 1137px 963px #FFF , 121px 691px #FFF , 627px 1757px #FFF , 484px 1072px #FFF , 429px 1463px #FFF , 1828px 689px #FFF , 1400px 267px #FFF , 1286px 1276px #FFF , 1385px 615px #FFF , 277px 1587px #FFF , 1124px 683px #FFF , 1097px 313px #FFF , 1810px 1034px #FFF , 1955px 1773px #FFF , 1681px 1731px #FFF , 1235px 1531px #FFF , 1100px 270px #FFF , 777px 715px #FFF , 1288px 1578px #FFF , 676px 1227px #FFF , 922px 767px #FFF;
 }
 
+
+
+
 #title {
   position: absolute;
   top: 50%;
@@ -281,4 +284,15 @@ html {
 #wishlist{
     position: relative;
 }
+
+
+.wl-list{
+  justify-content: space-around !important;
+}
+
+section:first-child{
+  min-height: (100vh - 100px) !important;
+}
+
+
 

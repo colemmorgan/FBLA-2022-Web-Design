@@ -4,8 +4,50 @@ let isSubModalOpen = false;
 let lightMode = false;
 let isMenuOpen = false;
 let wishlistLength = 0;
-let img = null;
+let car = null;
 let isImgOpen = false;
+
+
+
+function addToWishlist(carNumber){
+
+  if (wishlistLength===0){
+  car = document.getElementById(carNumber).innerHTML
+  document.getElementById('wlcar1').innerHTML = car
+  const element = document.getElementById("wl__empty--msg");
+  element.remove();
+  wishlistLength++
+}
+  
+else if (wishlistLength===1){
+    car = document.getElementById(carNumber).innerHTML
+    document.getElementById('wlcar2').innerHTML = car
+    wishlistLength++
+  }
+
+else if (wishlistLength===2){
+    car = document.getElementById(carNumber).innerHTML
+    document.getElementById('wlcar3').innerHTML = car
+    wishlistLength++
+  }
+    
+else if (wishlistLength===3){
+    car = document.getElementById(carNumber).innerHTML
+    document.getElementById('wlcar4').innerHTML = car
+    wishlistLength++
+    }
+else if (wishlistLength===4){
+    car = document.getElementById(carNumber).innerHTML
+    document.getElementById('wlcar5').innerHTML = car
+    wishlistLength++
+    }
+
+  else{
+    alert("You May Only Add 5 Items to Your Wishlist")
+  }
+  
+  
+}
 
 function enlargePhoto(photoID) {
   if (isImgOpen) {
