@@ -106,7 +106,7 @@
         
         <section class="landing__page testing">
           <div class="container">
-            <h1 class="section__title">Your Dream Car Awaits</h1>
+            <h1 class="animate__gradient">Your <span class="gradient">Dream Car</span> Awaits</h1>
           </div>
         </section>
             
@@ -114,24 +114,29 @@
         <section class="cars">
         <div class="container">
           <div class="row">
-            <h1 class="section__title">Our <span class="blue">Cars</span></h1>
-            <a href="#wishlist"><h2 class="section__sub-title">Jump to Wishlist</h2></a>
+            <h1 class="section__title cars__title">Our <span class="blue">Cars</span></h1>
+            <a href="#wishlist" class="click"><h2 class="section__sub-title">Jump to Wishlist <i class="fa-solid fa-arrow-down"></i></h2></a>
             <ul class="car__list">
               <li class="car" id="car1">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
                     <img src="./USD10TOC021A021001.webp" alt="" class="car__img" id="photo_test">
                   </div>
-                  <div class="car__description" id="test34">
+                  <div class="car__description">
                     <p class="model car__description--para car1" id="model"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
                     <p class="brand car__description--para car1" ><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
                     <p class="price car__description--para car1"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
                     <p class="price car__description--para car1"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" id="wishlist-add__button" onclick="addToWishlist(`car1`)">
-                      <i class="fa-solid fa-plus"></i>
+                    <div id="wishlist-add__wrapper">
+                      <button class="wishlish-add click c65"  onclick="addToWishlist(`car1`)">
+                        <i class="fa-solid fa-plus"></i>
                     </button>
+                  <button class="wishlist-remove click" onclick="removeFromWishlist('car1')">
+                    <i class="fa-solid fa-xmark"></i> Remove From Wishlist
+                  </button>
+                  </div>
                     <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
                       <i class="fa-solid fa-image"></i>
                     </button>
@@ -150,9 +155,14 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car2`)">
-                    <i class="fa-solid fa-plus"></i>
+                    <div id="wishlist-add__wrapper">
+                      <button class="wishlish-add click c65"  onclick="addToWishlist(`car2`)">
+                        <i class="fa-solid fa-plus"></i>
                     </button>
+                  <button class="wishlist-remove click" onclick="removeFromWishlist()">
+                    <i class="fa-solid fa-xmark"></i> Remove From Wishlist
+                  </button>
+                  </div>
                     <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
@@ -508,27 +518,52 @@
             <div class="row">
               <h1 class="section__title">Your Wishlist</h1>
 
-              <h2 id="wl__empty--msg">Your Wishlist Is Currently Empty</h2>
+              <h2 id="wl__empty--msg">Your Wishlist Is Currently Empty. Add a Car to Begin.</h2>
 
-              <ul class="car__list wl-list">
-                <li class="car" id="wlcar1">
+              <ul class="wl-list" id="unordered__wl">
                 
-              </li>
-              <li class="car" id="wlcar2">
                 
-              </li>
-              <li class="car" id="wlcar3">
-                
-              </li>
-              <li class="car" id="wlcar4">
-                
-              </li>
-              <li class="car" id="wlcar5">
-                
-              </li>
+              
             </ul>
             </div>
           </div>
+          <footer>
+            <div class="footer__wrapper">
+              <div class="row footer__row">
+                <figure>
+                  <img
+                    src="./gdc-low-resolution-logo-white-on-transparent-background.png"
+                    alt=""
+                    class="footer__logo--img"
+                  />
+                </figure>
+                <div class="footer__social--list">
+                  <a
+                    href=""
+                    class="footer__social--link link__hover-effect link__hover-effect--white"
+                    >Github</a
+                  >
+                  <a
+                    href=""
+                    class="footer__social--link link__hover-effect link__hover-effect--white"
+                    >LinkedIn</a
+                  >
+                  <a
+                  onclick="toggleModal()"
+                    href="#"
+                    class="footer__social--link link__hover-effect link__hover-effect--white"
+                    >Email</a
+                  >
+                  <a
+                    href=""
+                    class="footer__social--link link__hover-effect link__hover-effect--white"
+                    >Resume</a
+                  >
+                </div>
+                <div class="footer__copyright">Copyright © Gainesville Dream Cars 2022</div>
+              </div>
+            </div>
+          </footer>
         </section>
 
 
@@ -672,5 +707,6 @@
           </div>
         </div>
       </header>
+     
   </body>
 </html>

@@ -6,47 +6,31 @@ let isMenuOpen = false;
 let wishlistLength = 0;
 let car = null;
 let isImgOpen = false;
-
+let wishlistEntry=1
+let wishlistCar=null
 
 
 function addToWishlist(carNumber){
-
-  if (wishlistLength===0){
-  car = document.getElementById(carNumber).innerHTML
-  document.getElementById('wlcar1').innerHTML = car
-  const element = document.getElementById("wl__empty--msg");
-  element.remove();
+  wishlistCar="wl_car"+wishlistEntry
   wishlistLength++
+  document.body.classList += " wl__occupied"
+  
+  const newNode = document.createElement("li")
+  newNode.innerHTML =document.getElementById(carNumber).innerHTML
+  newNode.setAttribute("id",wishlistCar)
+  let list= document.getElementById("unordered__wl")
+  list.appendChild(newNode)
+  
+  wishlistEntry++
 }
-  
-else if (wishlistLength===1){
-    car = document.getElementById(carNumber).innerHTML
-    document.getElementById('wlcar2').innerHTML = car
-    wishlistLength++
-  }
 
-else if (wishlistLength===2){
-    car = document.getElementById(carNumber).innerHTML
-    document.getElementById('wlcar3').innerHTML = car
-    wishlistLength++
-  }
-    
-else if (wishlistLength===3){
-    car = document.getElementById(carNumber).innerHTML
-    document.getElementById('wlcar4').innerHTML = car
-    wishlistLength++
-    }
-else if (wishlistLength===4){
-    car = document.getElementById(carNumber).innerHTML
-    document.getElementById('wlcar5').innerHTML = car
-    wishlistLength++
-    }
 
-  else{
-    alert("You May Only Add 5 Items to Your Wishlist")
-  }
-  
-  
+function removeFromWishlist(carNumber){
+ let object= document.getElementById('wl_car1')
+ object.remove()
+ wishlistLength--
+ document.body.classList.remove("wl__occupied")
+
 }
 
 function enlargePhoto(photoID) {
