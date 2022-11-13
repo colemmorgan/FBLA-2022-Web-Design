@@ -99,7 +99,7 @@ li{
 }
 
 
-.wishlish-add,
+.wishlist-add,
 .wishlist-remove,
 .enlarge-image{
     border: none;
@@ -109,7 +109,7 @@ li{
     
 }
 
-.wishlish-add,
+.wishlist-add,
 .enlarge-image{
   visibility: visible;
   width: 30px;
@@ -117,7 +117,7 @@ li{
   border-radius: 50%;
 }
 
-.wishlish-add::after{
+.wishlist-add::after{
     content: "Add to Wishlist";
     position: absolute;
     width: 100px;
@@ -128,7 +128,7 @@ li{
     font-size: 13px;
 }
 
-.wishlish-add:hover::after{
+.wishlist-add:hover::after{
   opacity: 1;
   transform: translateX(10%);
 }
@@ -163,24 +163,19 @@ li{
 }
 
 
-
-.wl__occupied .c65,
-.wl__occupied .enlarge-image::before{
-  display: none;
-}
-
-.wl__occupied .wishlist-remove{
-  visibility: visible;
-}
-
 .wl__occupied #wl__empty--msg{
   display: none;
 }
 
 
-.wishlist-add__wrapper{
-  width: 50%;
-}
+
+
+
+
+
+
+
+
 
 
 .section__title{
@@ -425,13 +420,6 @@ html {
 }
 
 
-.wl__occupied .c65 {
-  display: none;
-}
-
-.wl__occupied .wishlist-remove{
-  visibility: visible;
-}
 
 
 .wishlist-add__wrapper{
@@ -454,4 +442,28 @@ html {
 
 #bmw3Series{
   padding: 24px 12px 12px 12px;
+}
+
+#typeR{
+  padding: 12px 0;
+}
+
+#rangeRover{
+  padding: 24px 12px 12px 12px;
+}
+
+
+
+
+/* 
+
+*/
+
+.page-jump__container{
+  display: flex;
+  justify-content: center;
+}
+
+.page-jump{
+  margin: 0 32px;
 }

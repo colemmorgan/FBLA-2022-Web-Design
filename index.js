@@ -6,33 +6,63 @@ let isMenuOpen = false;
 let wishlistLength = 0;
 let car = null;
 let isImgOpen = false;
-let wishlistEntry=1
-let wishlistCar=null
+let wishlistCar = null;
+let carBtn=null;
 
 
-function addToWishlist(carNumber, carID){
-  wishlistLength++
-  // if (wishlistLength===1){
-  // document.body.classList += " wl__occupied"}
-  
-  const newNode = document.createElement("li")
-  newNode.innerHTML =document.getElementById(carNumber).innerHTML
-  newNode.setAttribute("id", carID)
-  let list= document.getElementById("unordered__wl")
-  list.appendChild(newNode)
-  
-  wishlistEntry++
+function RemoveWlButton(carNumber){
+  car=document.getElementById(carNumber)
+  carBtn= car.getElementsByClassName('wishlist-add')
+  carBtn[0].style.visibility= "hidden"
+}
+
+function showWlRemoveButton(carNumber){
+  car=document.getElementById(carNumber)
+  carBtn= car.getElementsByClassName('wishlist-remove')
+  carBtn[0].style.visibility= "visible"
+}
+
+function showWlAddButton(carNumber){
+  car=document.getElementById(carNumber)
+  carBtn= car.getElementsByClassName('wishlist-add')
+  carBtn[0].style.visibility= "visible"
+}
+
+function removeWlRemoveButton(carNumber){
+  car=document.getElementById(carNumber)
+  carBtn= car.getElementsByClassName('wishlist-remove')
+  carBtn[0].style.visibility= "hidden"
 }
 
 
-function removeFromWishlist(carID){
- let object= document.getElementById(carID)
- object.remove()
- wishlistLength--
 
- if(wishlistLength===0){
- document.body.classList.remove("wl__occupied")}
 
+function addToWishlist(carNumber, carID) {
+  wishlistLength++;
+  if (wishlistLength === 1) {
+    document.body.classList += " wl__occupied";
+  }
+
+  RemoveWlButton(carNumber)
+  showWlRemoveButton(carNumber)
+
+  const newNode = document.createElement("li");
+  newNode.innerHTML = document.getElementById(carNumber).innerHTML;
+  newNode.setAttribute("id", carID);
+  let list = document.getElementById("unordered__wl");
+  list.appendChild(newNode);
+}
+
+function removeFromWishlist(carNumber, carID) {
+  removeWlRemoveButton(carNumber)
+  showWlAddButton(carNumber)
+  let object = document.getElementById(carID);
+  object.remove();
+  wishlistLength--;
+
+  if (wishlistLength === 0) {
+    document.body.classList.remove("wl__occupied");
+  }
 }
 
 function enlargePhoto(photoID) {
@@ -44,7 +74,7 @@ function enlargePhoto(photoID) {
   image = document.getElementById("modal__img");
   image.src = img;
   isImgOpen = true;
-  document.body.classList += " img__enlarged"
+  document.body.classList += " img__enlarged";
 }
 
 function toggleMenu() {

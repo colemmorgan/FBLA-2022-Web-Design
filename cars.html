@@ -107,6 +107,10 @@
         <section class="landing__page testing">
           <div class="container">
             <h1 class="animate__gradient">Your <span class="gradient">Dream Car</span> Awaits</h1>
+            <div class="page-jump__container">
+              <a href="#wishlist" class="click page-jump"><h2 class="section__sub-title">Jump to Cars <i class="fa-solid fa-arrow-down"></i></h2></a>
+              <a href="#wishlist" class="click page-jump"><h2 class="section__sub-title">Jump to Wishlist <i class="fa-solid fa-arrow-down"></i></h2></a>
+            </div>
           </div>
         </section>
             
@@ -120,7 +124,7 @@
               <li class="car" id="car1">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./carphotos/porche911.png" alt="" class="car__img" id="photo_test">
+                    <img src="./carphotos/porche911.png" alt="" class="car__img" id="porche911">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para car1" id="model"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -130,14 +134,14 @@
                   </div>
                   <div class="buttons">
                     <div id="wishlist-add__wrapper">
-                      <button class="wishlish-add click c65"  onclick="addToWishlist(`car1`,`toyotaCamry`)">
+                      <button class="wishlist-add click"  onclick="addToWishlist(`car1`,'101')">
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                  <button class="wishlist-remove click" onclick="removeFromWishlist(`toyotaCamry`)">
+                  </div>
+                  <button class="wishlist-remove click" onclick="removeFromWishlist(`car1`,'101')">
                     <i class="fa-solid fa-xmark"></i> Remove From Wishlist
                   </button>
-                  </div>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
+                    <button class="enlarge-image click" onclick="enlargePhoto(`porche911`)">
                       <i class="fa-solid fa-image"></i>
                     </button>
                   </div>
@@ -146,7 +150,7 @@
               <li class="car" id="car2">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./carphotos/NissanGTR.png" alt="" class="car__img" id="photo_test4">
+                    <img src="./carphotos/NissanGTR.png" alt="" class="car__img" id="GTR">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -156,14 +160,15 @@
                   </div>
                   <div class="buttons">
                     <div id="wishlist-add__wrapper">
-                      <button class="wishlish-add click c65"  onclick="addToWishlist(`car2`)">
+                      <button class="wishlist-add click c65"  onclick="addToWishlist(`car2`)">
                         <i class="fa-solid fa-plus"></i>
                     </button>
+                  </div>
                   <button class="wishlist-remove click" onclick="removeFromWishlist()">
                     <i class="fa-solid fa-xmark"></i> Remove From Wishlist
                   </button>
-                  </div>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test4`)">
+                  
+                    <button class="enlarge-image click" onclick="enlargePhoto(`GTR`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
                   </div>
@@ -172,7 +177,7 @@
               <li class="car" id="car3">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./carphotos/2021Dcharger.webp" alt="" class="car__img">
+                    <img src="./carphotos/2021Dcharger.webp" alt="" class="car__img" id="charger">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -181,10 +186,10 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car3`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car3`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
+                    <button class="enlarge-image click" onclick="enlargePhoto(`charger`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
                   </div>
@@ -202,7 +207,7 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car4`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car4`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
                     <button class="enlarge-image click" onclick="enlargePhoto(`modelS`)">
@@ -223,7 +228,7 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car5`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car5`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
                     <button class="enlarge-image click" onclick="enlargePhoto(`hellcat`)">
@@ -244,7 +249,7 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car6`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car6`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
                     <button class="enlarge-image click" onclick="enlargePhoto(`r8`)">
@@ -265,7 +270,7 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car7`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car7`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
                     <button class="enlarge-image click" onclick="enlargePhoto(`supra`)">
@@ -286,7 +291,7 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car8`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car8`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
                     <button class="enlarge-image click" onclick="enlargePhoto(`jaguarXF`)">
@@ -307,7 +312,7 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car9`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car9`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
                     <button class="enlarge-image click" onclick="enlargePhoto(`bmw3Series`)">
@@ -319,7 +324,7 @@
               <li class="car" id="car10">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./USD10TOC021A021001.webp" alt="" class="car__img">
+                    <img src="./carphotos/amgGT.webp" alt="" class="car__img" id="amgGt">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -328,10 +333,10 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car10`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car10`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
+                    <button class="enlarge-image click" onclick="enlargePhoto(`amgGt`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
                   </div>
@@ -340,7 +345,7 @@
               <li class="car" id="car11">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./USD10TOC021A021001.webp" alt="" class="car__img">
+                    <img src="./carphotos/bmwM5.webp" alt="" class="car__img" id="bmwM5">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -349,10 +354,10 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car11`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car11`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
+                    <button class="enlarge-image click" onclick="enlargePhoto(`bmwM5`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
                   </div>
@@ -361,7 +366,7 @@
               <li class="car" id="car12">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./USD10TOC021A021001.webp" alt="" class="car__img">
+                    <img src="./carphotos/gt500.png" alt="" class="car__img" id="gt500">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -370,10 +375,10 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car12`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car12`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
+                    <button class="enlarge-image click" onclick="enlargePhoto(`gt500`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
                   </div>
@@ -382,7 +387,7 @@
               <li class="car" id="car13">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./USD10TOC021A021001.webp" alt="" class="car__img">
+                    <img src="./carphotos/blacktypeR.png" alt="" class="car__img" id="typeR">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -391,10 +396,10 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car13`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car13`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
+                    <button class="enlarge-image click" onclick="enlargePhoto(`typeR`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
                   </div>
@@ -403,7 +408,7 @@
               <li class="car" id="car14">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./USD10TOC021A021001.webp" alt="" class="car__img">
+                    <img src="./carphotos/lexusLC.webp" alt="" class="car__img" id="lexusLC">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -412,10 +417,10 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car14`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car14`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
+                    <button class="enlarge-image click" onclick="enlargePhoto(`lexusLC`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
                   </div>
@@ -424,7 +429,7 @@
               <li class="car" id="car15">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./USD10TOC021A021001.webp" alt="" class="car__img">
+                    <img src="./carphotos/genesisG70.png" alt="" class="car__img" id="genesisG70">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -433,10 +438,10 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car15`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car15`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
+                    <button class="enlarge-image click" onclick="enlargePhoto(`genesisG70`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
                   </div>
@@ -445,7 +450,7 @@
               <li class="car" id="car16">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./USD10TOC021A021001.webp" alt="" class="car__img">
+                    <img src="./carphotos/rangeRover.png" alt="" class="car__img" id="rangeRover">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -454,10 +459,10 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car16`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car16`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
+                    <button class="enlarge-image click" onclick="enlargePhoto(`rangeRover`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
                   </div>
@@ -466,7 +471,7 @@
               <li class="car" id="car17">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./USD10TOC021A021001.webp" alt="" class="car__img">
+                    <img src="./carphotos/cadillacCT5.png" alt="" class="car__img" id="CT5">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -475,10 +480,10 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car17`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car17`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
+                    <button class="enlarge-image click" onclick="enlargePhoto(`CT5`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
                   </div>
@@ -487,7 +492,7 @@
               <li class="car" id="car18">
                 <div class="car__wrapper">
                   <div class="car__img--wrapper">
-                    <img src="./USD10TOC021A021001.webp" alt="" class="car__img">
+                    <img src="./carphotos/porchePanamera.webp" alt="" class="car__img" id="porchePanamera">
                   </div>
                   <div class="car__description">
                     <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
@@ -496,10 +501,10 @@
                     <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
                   </div>
                   <div class="buttons">
-                    <button class="wishlish-add click" onclick="addToWishlist(`car18`)">
+                    <button class="wishlist-add click" onclick="addToWishlist(`car18`)">
                     <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="enlarge-image click" onclick="enlargePhoto(`photo_test`)">
+                    <button class="enlarge-image click" onclick="enlargePhoto(`porchePanamera`)">
                       <i class="fa-solid fa-image"></i>
                       </button>
                   </div>
@@ -511,9 +516,6 @@
       </section>
 
         <section id="wishlist">
-          <!-- <div id='stars'></div>
-          <div id='stars2'></div>
-          <div id='stars3'></div> -->
           <div class="container">
             <div class="row">
               <h1 class="section__title">Your Wishlist</h1>
