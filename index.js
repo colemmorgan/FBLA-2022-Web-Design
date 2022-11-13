@@ -56,9 +56,10 @@ function addToWishlist(carNumber, carID) {
 function removeFromWishlist(carNumber, carID) {
   removeWlRemoveButton(carNumber)
   showWlAddButton(carNumber)
-  let object = document.getElementById(carID);
+  object = document.getElementById(carID);
   object.remove();
   wishlistLength--;
+  object=null
 
   if (wishlistLength === 0) {
     document.body.classList.remove("wl__occupied");
