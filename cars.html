@@ -104,22 +104,22 @@
         <div id='stars3'></div>
         
         
-        <section class="landing__page testing">
+        <section class="landing__page testing" id="car__landing">
           <div class="container">
             <h1 class="animate__gradient">Your <span class="gradient">Dream Car</span> Awaits</h1>
             <div class="page-jump__container">
-              <a href="#wishlist" class="click page-jump"><h2 class="section__sub-title">Jump to Cars <i class="fa-solid fa-arrow-down"></i></h2></a>
+              <a href="#cars" class="click page-jump"><h2 class="section__sub-title">Jump to Cars <i class="fa-solid fa-arrow-down"></i></h2></a>
               <a href="#wishlist" class="click page-jump"><h2 class="section__sub-title">Jump to Wishlist <i class="fa-solid fa-arrow-down"></i></h2></a>
             </div>
           </div>
         </section>
             
             
-        <section class="cars">
+        <section class="cars" id="cars">
         <div class="container">
           <div class="row">
             <h1 class="section__title cars__title">Our <span class="blue">Cars</span></h1>
-            <a href="#wishlist" class="click"><h2 class="section__sub-title">Jump to Wishlist <i class="fa-solid fa-arrow-down"></i></h2></a>
+            <a href="#wishlist" class="click page-jump"><h2 class="section__sub-title">Jump to Wishlist <i class="fa-solid fa-arrow-down"></i></h2></a>
             <ul class="car__list">
               <li class="car" id="car1">
                 <div class="car__wrapper">
@@ -127,10 +127,10 @@
                     <img src="./carphotos/porche911.png" alt="" class="car__img" id="porche911">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para car1" id="model"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para car1" ><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para car1"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para car1"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para car1" id="model"><i class="fa-solid fa-car car__description__logo"></i>2023 Porsche 911</p>
+                    <p class="brand car__description--para car1" ><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$106,100</p>
+                    <p class="price car__description--para car1"><i class="fa-solid fa-location-dot car__description__logo"></i>36 Miles Away</p>
+                    <p class="price car__description--para car1"><i class="fa-solid fa-gauge car__description__logo"></i>379 to 640 hp</p>
                   </div>
                   <div class="buttons">
                     <div id="wishlist-add__wrapper">
@@ -153,14 +153,14 @@
                     <img src="./carphotos/NissanGTR.png" alt="" class="car__img" id="GTR">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Nissan GT-R</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$113,540</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>124 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>565 to 600 hp</p>
                   </div>
                   <div class="buttons">
                     <div id="wishlist-add__wrapper">
-                      <button class="wishlist-add click c65"  onclick="addToWishlist(`car2`)">
+                      <button class="wishlist-add click c65"  onclick="addToWishlist(`car2`,'102')">
                         <i class="fa-solid fa-plus"></i>
                     </button>
                   </div>
@@ -180,10 +180,10 @@
                     <img src="./carphotos/2021Dcharger.webp" alt="" class="car__img" id="charger">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2023 Dodge Charger</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$32,645</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>14 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>292 to 797 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car3`,'103')">
@@ -204,10 +204,10 @@
                     <img src="./carphotos/teslaModelS.avif" alt="" class="car__img" id="modelS">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2022 Tesla Model S</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$104,990</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>72 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>670 to 1,020 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car4`,'104')">
@@ -228,10 +228,10 @@
                     <img src="./carphotos/srtHellcat.png" alt="" class="car__img hellcat" id="hellcat">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2023 Dodge Challenger Hellcat</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$66,045</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>23 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>717 to 807 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car5`,'105')">
@@ -252,10 +252,10 @@
                     <img src="./carphotos/audiR8.avif" alt="" class="car__img" id="r8">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2023 Audi R8</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$158,600</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>15 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>562 to 602 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car6`,'106')">
@@ -276,10 +276,10 @@
                     <img src="./carphotos/supra.webp" alt="" class="car__img" id="supra">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2023 Toyota GR Supra 3.0</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$52,500</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>29 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>382 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car7`,'107')">
@@ -300,10 +300,10 @@
                     <img src="./carphotos/jaguarXF1.png" alt="" class="car__img" id="jaguarXF">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2023 Jaguar XF</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$47,000</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>8 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>246 to 296 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car8`,'108')">
@@ -324,10 +324,10 @@
                     <img src="./carphotos/bmw3Series.png" alt="" class="car__img" id="bmw3Series">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2023 BMW 3 Series</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$42,300</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>32 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>180 to 255 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car9`,'109')">
@@ -348,10 +348,10 @@
                     <img src="./carphotos/amgGT.webp" alt="" class="car__img" id="amgGt">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2020 Mercedes-Benz GT-Class</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$127,900</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>59 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>429 to 630 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car10`,'110')">
@@ -372,10 +372,10 @@
                     <img src="./carphotos/bmwM5.webp" alt="" class="car__img" id="bmwM5">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2018 BMW M5</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$104,595</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>156 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>600 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car11`,'111')">
@@ -396,10 +396,10 @@
                     <img src="./carphotos/gt500.png" alt="" class="car__img" id="gt500">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2022 Ford Shelby GT500</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>76,820</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>234 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>760 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car12`,'112')">
@@ -420,10 +420,10 @@
                     <img src="./carphotos/blacktypeR.png" alt="" class="car__img" id="typeR">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2023 Honda Civic Type R</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$42,895</p>
                     <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>315 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car13`,'113')">
@@ -444,10 +444,10 @@
                     <img src="./carphotos/lexusLC.webp" alt="" class="car__img" id="lexusLC">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2018 Lexus LC 500</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$93,000</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>31 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>471 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car14`,'114')">
@@ -468,10 +468,10 @@
                     <img src="./carphotos/genesisG70.png" alt="" class="car__img" id="genesisG70">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2022 Genesis G70</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$37,775</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>63 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>252 to 365 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car15`,'115')">
@@ -492,10 +492,10 @@
                     <img src="./carphotos/rangeRover.png" alt="" class="car__img" id="rangeRover">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2017 Land Rover Range Rover</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$86,500</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>11 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>254 to 550 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car16`,'116')">
@@ -516,10 +516,10 @@
                     <img src="./carphotos/cadillacCT5.png" alt="" class="car__img" id="CT5">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2022 Cadillac CT5-V</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$83,995</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>107 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>668hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car17`,'117')">
@@ -540,10 +540,10 @@
                     <img src="./carphotos/porchePanamera.webp" alt="" class="car__img" id="porchePanamera">
                   </div>
                   <div class="car__description">
-                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2021 Toyota Camry</p>
-                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$21,000</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>82 Miles Away</p>
-                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>123 Horsepower</p>
+                    <p class="model car__description--para"><i class="fa-solid fa-car car__description__logo"></i>2023 Porsche Panamera</p>
+                    <p class="brand car__description--para"><i class="fa-solid fa-money-check-dollar car__description__logo"></i>$92,400</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-location-dot car__description__logo"></i>4 Miles Away</p>
+                    <p class="price car__description--para"><i class="fa-solid fa-gauge car__description__logo"></i>325 to 620 hp</p>
                   </div>
                   <div class="buttons">
                     <button class="wishlist-add click" onclick="addToWishlist(`car18`,'118')">
@@ -566,14 +566,15 @@
         <section id="wishlist">
           <div class="container">
             <div class="row">
-              <h1 class="section__title">Your Wishlist</h1>
+              <h1 class="section__title cars__title">Your Wishlist</h1>
+              <div class="page-jump__container">
+              <a href="#cars" class="click page-jump"><h2 class="section__sub-title">Jump to Cars <i class="fa-solid fa-arrow-down"></i></h2></a>
+              <a href="#" class="click page-jump"><h2 class="section__sub-title">Jump to Top <i class="fa-solid fa-arrow-down"></i></h2></a>
+            </div>
 
               <h2 id="wl__empty--msg">Your Wishlist Is Currently Empty. Add a Car to Begin.</h2>
 
-              <ul class="wl-list" id="unordered__wl">
-                
-                
-              
+              <ul class="wl-list" id="unordered__wl"></ul>
             </ul>
             </div>
           </div>

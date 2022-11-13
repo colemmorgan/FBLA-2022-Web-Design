@@ -73,6 +73,7 @@ li{
     color: white;
     padding: 10px ;
     height: 35%;
+    padding-top:25px;
 }
 
 .car__description--para{
@@ -202,7 +203,7 @@ li{
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-  background-color: #00b0ff;
+  background-color: #1b2735;
   visibility: hidden;
   transition: all 300ms ease;
   opacity: 0;
@@ -221,7 +222,7 @@ li{
     opacity: 1;
 }
 
-.img__enlarged .car__list,
+/* .img__enlarged .car__list,
 .img__enlarged .section__title,
 .img__enlarged .section__sub-title {
     display: none;
@@ -231,7 +232,7 @@ li{
 .section__title,
 .section__sub-title{
     transition: all ease 300ms;
-}
+} */
 
 
 .cars__exit{
