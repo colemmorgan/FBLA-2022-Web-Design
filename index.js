@@ -34,7 +34,17 @@ function removeWlRemoveButton(carNumber){
   carBtn[0].style.visibility= "hidden"
 }
 
+function showSuccessState(carNumber) {
+  car=document.getElementById(carNumber)
+  carBtn= car.getElementsByClassName('success-state__wrapper')
+  carBtn[0].style.transform= "translateY(0%)"
+}
 
+function removeSuccessState(carNumber) {
+  car=document.getElementById(carNumber)
+  carBtn= car.getElementsByClassName('success-state__wrapper')
+  carBtn[0].style.transform= "translateY(100%)"
+}
 
 
 function addToWishlist(carNumber, carID) {
@@ -45,6 +55,9 @@ function addToWishlist(carNumber, carID) {
 
   RemoveWlButton(carNumber)
   showWlRemoveButton(carNumber)
+
+
+  document.body.classList += " image__after--hidden"
 
   const newNode = document.createElement("li");
   newNode.innerHTML = document.getElementById(carNumber).innerHTML;
@@ -64,6 +77,15 @@ function removeFromWishlist(carNumber, carID) {
   if (wishlistLength === 0) {
     document.body.classList.remove("wl__occupied");
   }
+
+  car=document.getElementById(carNumber)
+  carBtn= car.getElementsByClassName('success-state__wrapper')
+  
+  if(carBtn[0].style.transform= "translateY(0%)"){
+    carBtn[0].style.transform = "translateY(100%)"
+  }
+
+  
 }
 
 function enlargePhoto(photoID) {
