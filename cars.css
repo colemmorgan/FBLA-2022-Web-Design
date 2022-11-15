@@ -46,7 +46,6 @@ li{
 
 
 .car{
-    width: 27%;
     transition: all 225ms ease;
     position: relative;
 }
@@ -136,9 +135,9 @@ li{
     font-size: 13px;
 }
 
-.image__after--hidden .wishlist-en::after{
+/* .image__after--hidden .enlarge-image::after{
   visibility: hidden;
-}
+} */
 
 .wishlist-add:hover::after{
   opacity: 1;
@@ -255,6 +254,7 @@ li{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 80vw;
   /* width: 100%;
   max-width: 1000px; */
   height: 600px;
@@ -272,6 +272,7 @@ li{
 .img-modal__wrapper{
     width: 100%;
     height: 100%;  
+    max-width: 80vw;
     
 }
 
@@ -280,17 +281,6 @@ li{
     opacity: 1;
 }
 
-/* .img__enlarged .car__list,
-.img__enlarged .section__title,
-.img__enlarged .section__sub-title {
-    display: none;
-}
-
-.car__list,
-.section__title,
-.section__sub-title{
-    transition: all ease 300ms;
-} */
 
 
 .cars__exit{
@@ -300,6 +290,7 @@ li{
 
 .modal__img{
     width: 100%;
+    max-width: 80vw;
     
 }
 
@@ -561,3 +552,40 @@ html {
   
 }
 
+@media (max-width:950px) {
+ li{
+  width: 35%;
+ }
+
+ .car__list{
+  justify-content: space-around;
+}
+
+}
+
+@media (max-width:768px){
+  li{
+    width: 40%;
+  }
+  .car__list{
+    justify-content: space-around;
+ 
+  }
+
+  #unordered__wl{
+    justify-content: space-around;
+  }
+}
+
+
+@media (max-width:550px) {
+
+li {
+  width: 70%;
+}
+
+.car__list{
+  justify-content: center;
+}
+
+}

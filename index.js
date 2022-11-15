@@ -81,7 +81,7 @@ function removeFromWishlist(carNumber, carID) {
   car=document.getElementById(carNumber)
   carBtn= car.getElementsByClassName('success-state__wrapper')
   
-  if(carBtn[0].style.transform= "translateY(0%)"){
+  if(carBtn[0].style.transform = "translateY(0%)"){
     carBtn[0].style.transform = "translateY(100%)"
   }
 
