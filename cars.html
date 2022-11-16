@@ -44,20 +44,12 @@
           </li>
           <li class="nav__link">
             <a
-              href="./cars.html"
+              href="./about.html"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
             >
-              Cars</a
+              About</a
             >
           </li>
-          <li class="nav__link">
-            <a
-              href="#"
-              onclick="enlargePhoto()"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >
-              Wishlist</a
-            >
           </li>
           <li class="nav__link">
             <a
@@ -68,32 +60,26 @@
               Contact</a
             >
           </li>
-          <li class="nav__link">
-            <a
-              onclick="toggleLightMode()"
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >
-              <i class="fas fa-adjust"></i
-            ></a>
-          </li>
         </ul>
         <button class="btn__menu click" onclick="toggleMenu()">
           <i class="fas fa-bars"></i>
         </button>
        <div class="menu__backdrop">
-          <button class="btn__menu btn__menu--close" onclick="toggleMenu()">
+          <button class="btn__menu btn__menu--close click" onclick="toggleMenu()">
             <i class="fas fa-times"></i>
           </button>
           <ul class="menu__links">
             <li class="menu__list">
-              <a href="#" class="menu__link link__hover-effect" onclick="toggleMenu()">Home</a>
+              <a href="./index.html" class="menu__link link__hover-effect" onclick="toggleMenu()">Home</a>
             </li>
             <li class="menu__list">
-              <a href="#features" class="menu__link link__hover-effect" onclick="toggleMenu()">Cars</a>
+              <a href="./cars.html" class="menu__link link__hover-effect" onclick="toggleMenu()">Cars</a>
             </li>
             <li class="menu__list">
-              <a href="#" class="menu__link" onclick="toggleMenu();toggleLightMode()">Switch Light/Dark Mode</a>
+              <a href="#" class="menu__link" onclick="toggleMenu()">Copyright Information</a>
+            </li>
+            <li class="menu__list">
+              <a href="./about.html" class="menu__link" onclick="toggleMenu()">About</a>
             </li>
           </ul>
         </div>
@@ -683,7 +669,7 @@
         <section id="wishlist">
           <div class="container">
             <div class="row">
-              <h1 class="section__title cars__title">Your Wishlist</h1>
+              <h1 class="section__title cars__title">Your <span class="gradient">Wishlist</span> </h1>
               <div class="page-jump__container">
               <a href="#cars" class="click page-jump"><h2 class="section__sub-title">Jump to Cars <i class="fa-solid fa-arrow-up"></i></i></h2></a>
               <a href="#" class="click page-jump"><h2 class="section__sub-title">Jump to Top <i class="fa-solid fa-arrow-up"></i></h2></a>
@@ -695,6 +681,11 @@
             </ul>
             </div>
           </div>
+          <img src="./blob.svg" alt="" class="shape back--1" />
+          <img src="./blob.svg" alt="" class="shape back--2" />
+          <img src="./blob.svg" alt="" class="shape back--3" />
+          <img src="./blob.svg" alt="" class="shape back--4" />
+      
           <footer>
             <div class="footer__wrapper">
               <div class="row footer__row">
@@ -707,25 +698,26 @@
                 </figure>
                 <div class="footer__social--list">
                   <a
-                    href=""
+                    href="./about.html"
                     class="footer__social--link link__hover-effect link__hover-effect--white"
-                    >Github</a
+                    >About</a
                   >
                   <a
-                    href=""
+                    href="./cars.html"
                     class="footer__social--link link__hover-effect link__hover-effect--white"
-                    >LinkedIn</a
+                    >Cars</a
                   >
                   <a
                   onclick="toggleModal()"
                     href="#"
                     class="footer__social--link link__hover-effect link__hover-effect--white"
-                    >Email</a
+                    >Contact</a
                   >
                   <a
                     href=""
+                    target="_blank"
                     class="footer__social--link link__hover-effect link__hover-effect--white"
-                    >Resume</a
+                    >Copyright information</a
                   >
                 </div>
                 <div class="footer__copyright">Copyright © Gainesville Dream Cars 2022</div>

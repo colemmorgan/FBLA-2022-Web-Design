@@ -4,191 +4,150 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gainesville Dream Cars</title>
+    <title>Document</title>
+
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="cars.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="./favicon.png" />
-    <link rel="stylesheet" href="./cars.css">
     <script
       src="https://kit.fontawesome.com/630622aa33.js"
       crossorigin="anonymous"
     ></script>
     <script src="index.js" defer></script>
   </head>
+
   <body>
-    <section id="landing-page" class="cap" onmousemove="moveBackground(event)">
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
-      <nav>
-        <figure>
-          <img
-            class="company__logo"
-            src="./gdc-low-resolution-logo-white-on-transparent-background.png"
-            alt=""
-          />
-        </figure>
-        <ul class="nav__link--list">
-          <li class="nav__link">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <nav>
+      <figure>
+        <img
+          class="company__logo"
+          src="./gdc-low-resolution-logo-white-on-transparent-background.png"
+          alt=""
+        />
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link">
+          <a
+            href="./index.html"
+            class="nav__link--anchor link__hover-effect link__hover-effect--black"
+          >
+            Home</a
+          >
+        </li>
+        <li class="nav__link">
+          <a
+            onclick="toggleEmailModal()"
+            href="#"
+            class="nav__link--anchor link__hover-effect link__hover-effect--black"
+          >
+            Subscribe</a
+          >
+        </li>
+        <li class="nav__link">
+          <a
+            href="./cars.html"
+            class="nav__link--anchor link__hover-effect link__hover-effect--black"
+          >
+            Cars</a
+          >
+        </li>
+        <li class="nav__link">
+          <a
+            href="./about.html"
+            class="nav__link--anchor link__hover-effect link__hover-effect--black"
+          >
+            About</a
+          >
+        </li>
+        <li class="nav__link">
+          <a
+            onclick="toggleSubModal()"
+            href="#"
+            class="nav__link--anchor link__hover-effect link__hover-effect--black"
+          >
+            Contact</a
+          >
+        </li>
+      </ul>
+      <button class="btn__menu click" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close click" onclick="toggleMenu()">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu__links">
+          <li class="menu__list">
             <a
               href="./index.html"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >
-              Home</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              onclick="toggleEmailModal()"
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >
-              Subscribe</a
+              class="menu__link link__hover-effect"
+              onclick="toggleMenu()"
+              >Home</a
             >
           </li>
-          <li class="nav__link">
+          <li class="menu__list">
             <a
               href="./cars.html"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >
-              Cars</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              href="./about.html"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >
-              About</a
+              class="menu__link link__hover-effect"
+              onclick="toggleMenu()"
+              >Cars</a
             >
           </li>
-          <li class="nav__link">
-            <a
-              onclick="toggleSubModal()"
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="toggleMenu()"
+              >Copyright Information</a
             >
-              Contact</a
+          </li>
+          <li class="menu__list">
+            <a href="./about.html" class="menu__link" onclick="toggleMenu()"
+              >About</a
             >
           </li>
         </ul>
-        <button class="btn__menu click" onclick="toggleMenu()">
-          <i class="fas fa-bars"></i>
-        </button>
-       <div class="menu__backdrop">
-          <button class="btn__menu btn__menu--close click" onclick="toggleMenu()">
-            <i class="fas fa-times"></i>
-          </button>
-          <ul class="menu__links">
-            <li class="menu__list">
-              <a href="./index.html" class="menu__link link__hover-effect" onclick="toggleMenu()">Home</a>
-            </li>
-            <li class="menu__list">
-              <a href="./cars.html" class="menu__link link__hover-effect" onclick="toggleMenu()">Cars</a>
-            </li>
-            <li class="menu__list">
-              <a href="#" class="menu__link" onclick="toggleMenu()">Copyright Information</a>
-            </li>
-            <li class="menu__list">
-              <a href="./about.html" class="menu__link" onclick="toggleMenu()">About</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <header class="header">
+      </div>
+    </nav>
+    <header>
+      <section class="about__page">
         <div class="container">
           <div class="row">
-            <div class="landing__description">
-              <h1 class="landing__title">
-                Gainesville <span class="gradient">Dream Cars</span>
-              </h1>
-              <h3 class="landing__sub-title">
-                Gainesville's <span class="blue"> highest rated</span> and
-                <span class="blue">most awarded</span> car-search service
-              </h3>
-              <a href="./cars.html" class="landing__description--button click hover__up"
-                >Start your search!</a
-              >
+            <h1 class="animate__gradient">About <span class="gradient">Us</span></h1>
+
+            <div class="business-plan">
+              <div class="business-plan__img--wrapper">
+                <img  class="business-plan__img" src="./undrawImgs/undraw_order_a_car_-3-tww.svg" alt="">
             </div>
-            <figure class="landing__img--wrapper">
-              <img
-                src="./undrawImgs/undraw_vehicle_sale_a645.svg"
-                class="landing__img"
-              />
-            </figure>
-            <div class="badge-ribbon__wrapper">
-              <div class="badge-ribbon">
-                <img
-                  src="./undrawImgs/award.png"
-                  class="badge-ribbon__img"
-                  alt=""
-                />
-              </div>
+            <div class="business-plan__description--wrapper">
+                <h2 class="business-plan__description--title">How Gainesville Dream Cars Works</h2>
+                <h4 class="business-plan__description--para">Finding your dream car may seem hard, but at Gainesville Dream Cars we make it easy</h4>
+                <h4 class="business-plan__description--para">We partner with independent third pary sellers to consolidate the car market into one place, offering numerous high-end and luxury vehicles</h4>
+                <h4 class="business-plan__description--para">Simply browse our cars, and make your list of dream cars. Once you have found your dream car, reach out to us. We will the discuss financing and loan options. </h4>
+            </div>
+            <div class="business-plan__description--wrapper">
+              <h2 class="business-plan__description--title">Site Help</h2>
+              <h4 class="business-plan__description--para">How to contact us: Either click the contact button in the bottom right of every page or click the "contact" item in the navigation bar.</h4>
+              <h4 class="business-plan__description--para">How to subscribe to our newsletter: Click the subscribe button in the bottom left corner of every page or the "Subscribe" item in the navigation bar.</h4>
+              <h4 class="business-plan__description--para">If you have any other question or concerns, feel free to reach out to us using the contact feature. </h4>
+          </div>
             </div>
           </div>
         </div>
-      </header>
-      <img src="./blob.svg" alt="" class="shape back--1" />
-      <img src="./blob.svg" alt="" class="shape back--2" />
-      <img src="./blob.svg" alt="" class="shape back--3" />
-      <img src="./blob.svg" alt="" class="shape back--4" />
-      <img
-        src="./undrawImgs/SVG Shapes/semi circle.svg"
-        alt=""
-        class="shape__animate shape--1"
-      />
-      <img
-        src="./undrawImgs/SVG Shapes/squiggly.svg"
-        alt=""
-        class="shape__animate shape--2"
-      />
-      <img
-        src="./undrawImgs/SVG Shapes/semi circle.svg"
-        alt=""
-        class="shape__animate shape--3"
-      />
-      <img
-        src="./undrawImgs/SVG Shapes/squiggly.svg"
-        alt=""
-        class="shape__animate shape--4"
-      />
-      <img
-        src="./undrawImgs/SVG Shapes/semi circle.svg"
-        alt=""
-        class="shape__animate shape--5"
-      />
-      <img
-        src="./undrawImgs/SVG Shapes/squiggly.svg"
-        alt=""
-        class="shape__animate shape--6"
-      />
-      <img
-        src="./undrawImgs/SVG Shapes/semi circle.svg"
-        alt=""
-        class="shape__animate shape--7"
-      />
-      <img
-        src="./undrawImgs/SVG Shapes/squiggly.svg"
-        alt=""
-        class="shape__animate shape--8"
-      />
-      <img
-        src="./undrawImgs/SVG Shapes/semi circle.svg"
-        alt=""
-        class="shape__animate shape--9"
-      />
+      </section>
 
       <a href="#" class="btn__wrapper" onclick="toggleEmailModal()">
         <button class="mail__btn click">
           <i class="fas fa-envelope btn__img"></i>
         </button>
       </a>
-
       <a href="#" onclick="toggleSubModal()">
         <button class="sub__btn click">
           <i class="fa-solid fa-newspaper btn__img"></i>
         </button>
       </a>
-
       <div class="modal">
         <div class="modal__half modal__about">
           <h3 class="modal__title modal__title--about">
@@ -217,7 +176,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
-          <h2 class="modal__title modal__title--contact">Let's have a Chat!</h3>
+          <h2 class="modal__title modal__title--contact">Let's have a Chat!</h2>
           <h4 class="modal__sub-title modal__sub-title--contact">
             We want to help you find your dream car.
           </h4>
@@ -257,18 +216,18 @@
           <form action="" id="subscription__form">
             <div class="form__item">
               <label class="form__item--label">Full Name</label>
-              <input class="input" type="text"/>
+              <input class="input" type="text" />
             </div>
             <div class="form__item">
               <label class="form__item--label">Email</label>
-              <input class="input" type="text"/>
+              <input class="input" type="text" />
             </div>
             <div class="form__item">
               <label class="form__item--label">Phone Number</label>
-              <input class="input" type="text"/>
+              <input class="input" type="text" />
             </div>
             <div class="form__item checkbox">
-              <input class="input checkbox__btn" type="checkbox"/>
+              <input class="input checkbox__btn" type="checkbox" />
               <label class="form__item--label form__agreement"
                 >In accordance with our Privacy Policy, you permit us to store
                 the data you have entered into this form for the purpose of
@@ -299,7 +258,7 @@
           </p>
         </div>
       </div>
-    
+    </header>
     <footer>
       <div class="footer__wrapper">
         <div class="row footer__row">
@@ -338,6 +297,5 @@
         </div>
       </div>
     </footer>
-    </section>
   </body>
 </html>

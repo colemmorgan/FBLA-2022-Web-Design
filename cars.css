@@ -526,7 +526,9 @@ html {
 
 */
 
-
+.modal__exit {
+  color: white;
+}
 
 .cars__guide--wrapper{
   max-width: 800px;
@@ -534,7 +536,7 @@ html {
   border-radius: 24px;
   width: 100%;
   height: 550px;
-  background-color: #1b2735;
+  background-color: #00b0ff;
   z-index: 100;
   color: white;
   margin: 40px auto 0 auto;
@@ -575,6 +577,10 @@ html {
   #unordered__wl{
     justify-content: space-around;
   }
+
+  .enlarge-image{
+    display: none;
+  }
 }
 
 
@@ -589,3 +595,7 @@ li {
 }
 
 }
+
+
+
+

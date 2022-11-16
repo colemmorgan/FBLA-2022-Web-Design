@@ -386,6 +386,12 @@ Buttons
 }
 
 
+.shape--2,
+.shape--5,
+.shape--8 {
+  visibility: hidden;
+}
+
 /* BADGE DIV */
 
 .badge-ribbon__wrapper{
@@ -783,6 +789,7 @@ Menu
 .menu__link {
   color: white;
   font-size: 40px;
+  text-align: center;
 }
 
 .btn__menu--close {
