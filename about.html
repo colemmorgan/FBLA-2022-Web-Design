@@ -16,6 +16,15 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("8sMY7zpMTaFfSyV3g");
+      })();
+    </script>
   </head>
 
   <body>
@@ -41,7 +50,7 @@
         </li>
         <li class="nav__link">
           <a
-            onclick="toggleEmailModal()"
+            onclick="toggleSubModal()"
             href="#"
             class="nav__link--anchor link__hover-effect link__hover-effect--black"
           >
@@ -66,7 +75,7 @@
         </li>
         <li class="nav__link">
           <a
-            onclick="toggleSubModal()"
+            onclick="toggleEmailModal()"
             href="#"
             class="nav__link--anchor link__hover-effect link__hover-effect--black"
           >
@@ -124,7 +133,7 @@
             <div class="business-plan__description--wrapper">
                 <h2 class="business-plan__description--title">How Gainesville Dream Cars Works</h2>
                 <h4 class="business-plan__description--para">Finding your dream car may seem hard, but at Gainesville Dream Cars we make it easy</h4>
-                <h4 class="business-plan__description--para">We partner with independent third pary sellers to consolidate the car market into one place, offering numerous high-end and luxury vehicles</h4>
+                <h4 class="business-plan__description--para">We partner with independent third party sellers to consolidate the car market into one place, offering numerous high-end and luxury vehicles</h4>
                 <h4 class="business-plan__description--para">Simply browse our cars, and make your list of dream cars. Once you have found your dream car, reach out to us. We will the discuss financing and loan options. </h4>
             </div>
             <div class="business-plan__description--wrapper">

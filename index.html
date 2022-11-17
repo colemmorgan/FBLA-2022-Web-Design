@@ -13,6 +13,15 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("8sMY7zpMTaFfSyV3g");
+      })();
+    </script>
   </head>
   <body>
     <section id="landing-page" class="cap" onmousemove="moveBackground(event)">
@@ -38,7 +47,7 @@
           </li>
           <li class="nav__link">
             <a
-              onclick="toggleEmailModal()"
+              onclick="toggleSubModal()"
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
             >
@@ -322,7 +331,7 @@
               >Cars</a
             >
             <a
-            onclick="toggleModal()"
+            onclick="toggleEmailModal()"
               href="#"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >Contact</a
