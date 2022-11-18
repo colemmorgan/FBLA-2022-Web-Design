@@ -63,7 +63,6 @@ input:focus, textarea:focus{
 .container {
   padding: 40px 0;
   width: 100%;
-  min-height: 100vh;
   height: 100%;
 }
 
@@ -101,9 +100,7 @@ LANDING PAGE
 
 #landing-page{
   background-color: #090a0f;
-  min-height: 100vh;
-  min-width: 100vw;
-  max-height: 1700px;
+  
 }
 
 .cap{

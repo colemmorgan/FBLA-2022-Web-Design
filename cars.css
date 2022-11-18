@@ -144,22 +144,7 @@ li{
   transform: translateX(10%);
 }
 
-.enlarge-image::before{
-    content: "Enlarge Image";
-    position: absolute;
-    width: 100px;
-    color: white;
-    transform: translateX(-10%);
-    opacity: 0;
-    transition: all 300ms ease;
-    font-size: 13px;
-}
 
-.enlarge-image:hover::before{
-    transform: translateX(-110%); 
-    opacity: 1; 
-    
-}
 
 
 .wishlist-remove{
@@ -266,6 +251,7 @@ li{
   transition: all 300ms ease;
   opacity: 0;
   box-shadow: 20px 20px 40px black;
+  z-index: 9999999999;
 }
 
 
@@ -406,6 +392,9 @@ html {
   
 }
 
+.wl-row{
+  min-height: 80vh;
+}
 
 
 
@@ -475,9 +464,6 @@ html {
 .wishlist-add__wrapper{
   width: 50%;
 }
-
-
-
 
 
 .hellcat{
@@ -608,6 +594,11 @@ html {
 
   .cars__guide--wrapper{
     box-shadow: none;
+    height: 100%;
+  }
+
+  #wl__empty--msg{
+    font-size: 32px;
   }
 }
 
@@ -620,6 +611,10 @@ li {
 
 .car__list{
   justify-content: center;
+}
+
+#wl__empty--msg{
+  font-size: 26px;
 }
 
 }

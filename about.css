@@ -54,3 +54,37 @@
     margin-bottom: 24px;
     font-size: 24px;
 }
+
+@media (max-width: 768px) {
+    .business-plan__description--para{
+        font-size: 20px;
+    }
+
+    .business-plan__description--wrapper{
+        margin: 24px 56px;
+    }
+
+    .business-plan__img--wrapper{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 550px){
+
+    .business-plan__description--title{
+        font-size: 30px;
+    }
+    .business-plan__description--para{
+        font-size: 17px;
+    }
+
+    .business-plan__description--wrapper{
+        margin: 24px 32px;
+    }
+
+    .business-plan__img--wrapper{
+        margin-bottom: 0px;
+        margin-top: px;
+    }
+
+}
